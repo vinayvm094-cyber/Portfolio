@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinay V.M | Resume Preview</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #0f172a;
+            --secondary-color: #475569;
+            --accent-color: #0284c7;
+            --border-color: #e2e8f0;
+            --text-color: #1e293b;
+            --bg-color: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.5;
+            padding: 40px 20px;
+        }
+
+        /* Print Button Overlay */
+        .no-print-bar {
+            max-width: 800px;
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .btn-print {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.2s;
+        }
+
+        .btn-print:hover {
+            background-color: #0369a1;
+        }
+
+        .btn-back {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-back:hover {
+            color: var(--primary-color);
+        }
+
+        /* Resume A4 Sheet Mockup */
+        .resume-sheet {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px 60px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border-radius: 4px;
+        }
+
+        /* Header Style */
+        .resume-header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
+        }
+
+        .resume-header h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            font-size: 0.88rem;
+            color: var(--secondary-color);
+        }
+
+        .contact-info span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .contact-info a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Sections */
+        .resume-section {
+            margin-bottom: 24px;
+        }
+
+        .resume-section h2 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 6px;
+            margin-bottom: 14px;
+        }
+
+        .objective-text {
+            font-size: 0.95rem;
+            color: #334155;
+            text-align: justify;
+        }
+
+        /* Skill Grid */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px 24px;
+            font-size: 0.92rem;
+        }
+
+        .skill-item strong {
+            color: var(--primary-color);
+        }
+
+        .skill-item span {
+            color: #475569;
+        }
+
+        /* Timelines / Lists */
+        .list-item {
+            margin-bottom: 16px;
+        }
+
+        .list-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--primary-color);
+            margin-bottom: 4px;
+        }
+
+        .item-subheader {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.88rem;
+            color: var(--accent-color);
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .item-desc {
+            font-size: 0.9rem;
+            color: #334155;
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .item-desc li {
+            margin-bottom: 4px;
+        }
+
+        /* Certifications List */
+        .certs-list {
+            list-style: none;
+            font-size: 0.92rem;
+            color: #334155;
+        }
+
+        .certs-list li {
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .certs-list li span.cert-title {
+            font-weight: 500;
+            color: var(--primary-color);
+        }
+
+        .certs-list li span.cert-meta {
+            font-size: 0.85rem;
+            color: var(--secondary-color);
+            white-space: nowrap;
+            margin-left: 16px;
+        }
+
+        /* Print Settings Override */
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+
+            .no-print-bar {
+                display: none;
+            }
+
+            .resume-sheet {
+                box-shadow: none;
+                padding: 0;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Toolbar (Hidden on Print) -->
+    <div class="no-print-bar">
+        <a href="../index.html#resume" class="btn-back">
+            <i class="fa-solid fa-arrow-left"></i> Back to Portfolio
+        </a>
+        <button onclick="window.print()" class="btn-print">
+            <i class="fa-solid fa-print"></i> Print / Save as PDF
+        </button>
+    </div>
+
+    <!-- Printable Resume Canvas -->
+    <div class="resume-sheet">
+        
+        <!-- Header -->
+        <header class="resume-header">
+            <h1>VINAY V.M</h1>
+            <div class="contact-info">
+                <span><i class="fa-solid fa-location-dot"></i> Puducherry, India</span>
+                <span><i class="fa-solid fa-phone"></i> +91 94881 07046</span>
+                <span><i class="fa-solid fa-envelope"></i> <a href="mailto:vinayvm094@gmail.com">vinayvm094@gmail.com</a></span>
+                <span><i class="fa-brands fa-github"></i> <a href="https://github.com/Lonelyboyvinay" target="_blank">github.com/Lonelyboyvinay</a></span>
+                <span><i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/in/vinay-v-m" target="_blank">linkedin.com/in/vinay-v-m</a></span>
+            </div>
+        </header>
+
+        <!-- Objective -->
+        <section class="resume-section">
+            <h2>Objective</h2>
+            <p class="objective-text">
+                Master of Computer Applications (MCA) postgraduate with a strong foundation in computer applications, computer hardware, software development, operating systems, and IT support. Skilled in C#, HTML, CSS, JavaScript, computer troubleshooting, and technical problem-solving. Seeking an entry-level position in the IT industry where I can apply my technical knowledge, analytical skills, and willingness to learn while contributing to organizational success and professional growth.
+            </p>
+        </section>
+
+        <!-- Education -->
+        <section class="resume-section">
+            <h2>Education</h2>
+            
+            <div class="list-item">
+                <div class="item-header">
+                    <span>Master of Computer Applications (MCA)</span>
+                    <span>2026 (Pursuing)</span>
+                </div>
+                <div class="item-subheader">
+                    <span>Rajiv Gandhi College of Engineering and Technology</span>
+                    <span>Puducherry</span>
+                </div>
+            </div>
+
+            <div class="list-item">
+                <div class="item-header">
+                    <span>B.Voc. Software Development</span>
+                    <span>2024</span>
+                </div>
+                <div class="item-subheader">
+                    <span>Pondicherry University Community College (7.5 CGPA)</span>
+                    <span>Puducherry</span>
+                </div>
+            </div>
+
+            <div class="list-item">
+                <div class="item-header">
+                    <span>Diploma in Airline Tourism and Hospitality Management</span>
+                    <span>2021</span>
+                </div>
+                <div class="item-subheader">
+                    <span>Heart School of Aviation (Grade A)</span>
+                    <span>Puducherry</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="resume-section">
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <strong>Programming:</strong> <span>C#, Java, Python</span>
+                </div>
+                <div class="skill-item">
+                    <strong>Web Technologies:</strong> <span>HTML5, CSS3, ASP.NET, PHP, Bootstrap</span>
+                </div>
+                <div class="skill-item">
+                    <strong>Databases:</strong> <span>MySQL, SQL Server</span>
+                </div>
+                <div class="skill-item">
+                    <strong>Operating Systems:</strong> <span>Windows 10/11</span>
+                </div>
+                <div class="skill-item">
+                    <strong>Hardware & IT Support:</strong> <span>Assembly, System Config, Desktop Support</span>
+                </div>
+                <div class="skill-item">
+                    <strong>Development Tools:</strong> <span>Visual Studio, VS Code, Git, GitHub</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="resume-section">
+            <h2>Experience</h2>
+            <div class="list-item">
+                <div class="item-header">
+                    <span>In-Plant Trainee – Manufacturing</span>
+                    <span>Mar 2023</span>
+                </div>
+                <div class="item-subheader">
+                    <span>Lenovo (India) Pvt. Ltd.</span>
+                    <span>Puducherry</span>
+                </div>
+                <ul class="item-desc">
+                    <li>Completed a 22-day in-plant training in Lenovo's Manufacturing department, gaining exposure to industrial operations, production workflows, and quality control processes.</li>
+                    <li>Learned quality diagnostics procedures and diagnostics run environments for personal computer and desktop systems.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="resume-section">
+            <h2>Projects</h2>
+            
+            <div class="list-item">
+                <div class="item-header">
+                    <span>GreenCloud: Carbon-Aware Workload Management</span>
+                    <span>Python, Flask, MySQL, Bootstrap</span>
+                </div>
+                <ul class="item-desc">
+                    <li>Developed full-stack cloud platform with Admin, Owner, and Sub User role-based authentication and security resets.</li>
+                    <li>Built real-time resource tracking, scheduling logic, and carbon analytics dashboards visualized with Chart.js.</li>
+                </ul>
+            </div>
+
+            <div class="list-item">
+                <div class="item-header">
+                    <span>Namma Veedu RGCET – Food Ordering & Restaurant Management System</span>
+                    <span>ASP.NET MVC, C#, SQL Server, Bootstrap</span>
+                </div>
+                <ul class="item-desc">
+                    <li>Developed a responsive restaurant management and food ordering platform using ASP.NET MVC and SQL Server.</li>
+                    <li>Implemented secure authentication and authorization with separate Admin and Customer dashboards.</li>
+                    <li>Built menu browsing, cart management, online ordering, wallet system, coupons, wishlist, live order tracking, and customer reviews.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section class="resume-section">
+            <h2>Certifications & Workshops</h2>
+            <ul class="certs-list">
+                <li>
+                    <span class="cert-title">Foundation of Full Stack Web Development (E-SDP)</span>
+                    <span class="cert-meta">MSME Technology Centre | Aug–Oct 2025</span>
+                </li>
+                <li>
+                    <span class="cert-title">The Joy of Computing using Python (Elite)</span>
+                    <span class="cert-meta">NPTEL / IIT Madras | Oct 2025</span>
+                </li>
+                <li>
+                    <span class="cert-title">Internet of Things (IoT) Training</span>
+                    <span class="cert-meta">MSME Technology Centre | Aug 2025</span>
+                </li>
+                <li>
+                    <span class="cert-title">PHP and MySQL Training</span>
+                    <span class="cert-meta">IIT Bombay Spoken Tutorial | Apr 2025</span>
+                </li>
+                <li>
+                    <span class="cert-title">C Programming Training</span>
+                    <span class="cert-meta">IIT Bombay Spoken Tutorial | Jan 2025</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Languages -->
+        <section class="resume-section">
+            <h2>Languages</h2>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <strong>Tamil:</strong> <span>Speak, Write</span>
+                </div>
+                <div class="skill-item">
+                    <strong>English:</strong> <span>Speak, Write</span>
+                </div>
+                <div class="skill-item">
+                    <strong>Malayalam:</strong> <span>Speak</span>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>

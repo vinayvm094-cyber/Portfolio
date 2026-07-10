@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinay V.M | Premium Portfolio | MCA & Software Developer</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Professional portfolio of Vinay V.M. MCA postgraduate, software developer, and IT support specialist. Skilled in C#, Java, Python, Web technologies, database management, and computer troubleshooting.">
+    <meta name="keywords" content="Vinay V.M, Vinay, Portfolio, MCA, Software Developer, IT Support, Hardware Support, Puducherry, C#, Java, Python, GreenCloud, Namma Veedu RGCET, Food Ordering, Restaurant Management">
+    <meta name="author" content="Vinay V.M">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lonelyboyvinay.github.io/">
+    <meta property="og:title" content="Vinay V.M | Personal Portfolio">
+    <meta property="og:description" content="Explore the portfolio of Vinay V.M - Master of Computer Applications student and full-stack software engineer specialized in C#, Python, and IT support systems.">
+    <meta property="og:image" content="assets/images/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://lonelyboyvinay.github.io/">
+    <meta property="twitter:title" content="Vinay V.M | Personal Portfolio">
+    <meta property="twitter:description" content="Explore the portfolio of Vinay V.M - Master of Computer Applications student and full-stack software engineer specialized in C#, Python, and IT support systems.">
+    <meta property="twitter:image" content="assets/images/og-image.png">
+
+    <!-- Favicon (Inline SVG for clean, request-less setup) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%2300f3ff%22 font-family=%22monospace%22 font-weight=%22bold%22>V</text></svg>">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data (JSON-LD) for SEO / ATS compatibility -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Vinay V.M",
+      "jobTitle": "Software Developer & IT Specialist",
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Rajiv Gandhi College of Engineering and Technology, Puducherry"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Pondicherry University Community College, Puducherry"
+        }
+      ],
+      "knowsAbout": [
+        "Software Development",
+        "C#",
+        "Python",
+        "Java",
+        "HTML5",
+        "CSS3",
+        "ASP.NET",
+        "MySQL",
+        "Computer Hardware Troubleshooting",
+        "Desktop Support"
+      ],
+      "email": "vinayvm094@gmail.com",
+      "telephone": "+919488107046",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Puducherry",
+        "addressCountry": "India"
+      },
+      "sameAs": [
+        "https://github.com/Lonelyboyvinay",
+        "https://linkedin.com/in/vinay-v-m"
+      ]
+    }
+    </script>
+</head>
+<body class="dark-theme">
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor-glow" id="cursorGlow"></div>
+    <div class="custom-cursor-dot" id="cursorDot"></div>
+
+    <!-- Background Layers -->
+    <div class="bg-grid-overlay"></div>
+    <div class="aurora-container">
+        <div class="aurora orb-cyan"></div>
+        <div class="aurora orb-emerald"></div>
+        <div class="aurora orb-purple"></div>
+    </div>
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Header Navigation -->
+    <header class="glass-header" id="main-header">
+        <div class="header-container">
+            <a href="#home" class="logo">
+                <span class="logo-accent">V</span>INAY<span class="logo-dot">.</span>
+            </a>
+            
+            <nav class="nav-links" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#contact" class="btn-magnetic btn-nav-contact">Let's Talk</a>
+                <button class="mobile-menu-toggle" id="menu-btn" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Screen Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-overlay">
+        <div class="mobile-nav-links">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#experience" class="mobile-link">Experience</a>
+            <a href="#education" class="mobile-link">Education</a>
+            <a href="#certifications" class="mobile-link">Certifications</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <main class="content-wrapper">
+
+        <!-- 1. HERO SECTION -->
+        <section id="home" class="hero-section">
+            <div class="section-container hero-container">
+                <div class="hero-content">
+                    <div class="badge-glow reveal-item">
+                        <span class="badge-dot"></span>
+                        <span class="badge-text">Available for Opportunities</span>
+                    </div>
+                    
+                    <h1 class="hero-title reveal-item">
+                        Hi, I am <span class="text-gradient">Vinay V.M</span>
+                    </h1>
+                    
+                    <div class="hero-subtitle reveal-item">
+                        I specialize in <span class="typing-element text-cyan" id="typing-text"></span>
+                    </div>
+
+                    <p class="hero-desc reveal-item">
+                        An MCA postgraduate with a strong foundation in software engineering, operating systems, database management, and hands-on IT support. I build high-performance, user-focused digital solutions and troubleshoot system complexities with analytical excellence.
+                    </p>
+
+                    <div class="hero-cta reveal-item">
+                        <a href="#contact" class="btn btn-primary btn-magnetic">
+                            <span>Get In Touch</span> <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <!-- Linked directly to a dummy downloadable asset. We can bundle instructions or resume file -->
+                        <a href="assets/Vinay_VM_Resume.pdf" class="btn btn-secondary btn-magnetic" download="Vinay_VM_Resume.pdf">
+                            <span>Download Resume</span> <i class="fa-solid fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal-item">
+                    <div class="avatar-glass-frame">
+                        <div class="inner-glow-container"></div>
+                        <div class="profile-image-placeholder">
+                            <img src="assets/images/profile.jpg" alt="Vinay V.M Profile Photo" class="profile-avatar-img">
+                            <div class="scan-line"></div>
+                        </div>
+                        
+                        <!-- Floating Glass Metric 1 -->
+                        <div class="floating-glass-card metric-card-1">
+                            <div class="card-icon-container cyan-glow">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <div class="card-metric-info">
+                                <span class="metric-val">MCA</span>
+                                <span class="metric-lbl">Postgrad 2026</span>
+                            </div>
+                        </div>
+
+                        <!-- Floating Glass Metric 2 -->
+                        <div class="floating-glass-card metric-card-2">
+                            <div class="card-icon-container emerald-glow">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                            </div>
+                            <div class="card-metric-info">
+                                <span class="metric-val">IT Support</span>
+                                <span class="metric-lbl">Troubleshooting</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#about" class="scroll-indicator" aria-label="Scroll Down">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+            </a>
+        </section>
+
+
+        <!-- 2. ABOUT ME & 3. CAREER OBJECTIVE -->
+        <section id="about" class="about-section">
+            <div class="section-container">
+                <div class="section-header align-center">
+                    <span class="section-subtitle">Discovery</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card-large glass-card reveal-item" data-tilt>
+                        <div class="card-inner-glow"></div>
+                        <h3>Professional Overview</h3>
+                        <p>
+                            I am currently pursuing a Master of Computer Applications (MCA) at Rajiv Gandhi College of Engineering and Technology, following my B.Voc degree in Software Development where I graduated with a solid 7.5 CGPA. My educational path has allowed me to blend high-level software theory with practical, hands-on computer systems expertise.
+                        </p>
+                        <p>
+                            Equipped with deep analytical thinking and troubleshooting skills, I enjoy solving problems at any layer of the stack — whether configuring systems, constructing clean food ordering platforms, optimizing MySQL queries, or diagnosing intricate hardware issues.
+                        </p>
+                        
+                        <div class="about-meta-grid">
+                            <div class="meta-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Puducherry, India</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>vinayvm094@gmail.com</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>+91 94881 07046</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-card-small glass-card objective-card reveal-item" data-tilt>
+                        <div class="card-inner-glow"></div>
+                        <h3><i class="fa-solid fa-bullseye accent-cyan"></i> Career Objective</h3>
+                        <p>
+                            Seeking an entry-level position in the IT industry where I can apply my technical knowledge, analytical skills, and willingness to learn while contributing to organizational success and professional growth. 
+                        </p>
+                        <p>
+                            I aim to deliver immediate value in software development, IT support, hardware maintenance, or desktop troubleshooting roles, adapting swiftly to modern corporate infrastructures.
+                        </p>
+                        <div class="objective-badges">
+                            <span class="badge">Adaptive</span>
+                            <span class="badge">Fast Learner</span>
+                            <span class="badge">Problem Solver</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 4. TECHNICAL SKILLS -->
+        <section id="skills" class="skills-section">
+            <div class="section-container">
+                <div class="section-header align-center">
+                    <span class="section-subtitle">Competencies</span>
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="skills-grid">
+                    
+                    <!-- Languages -->
+                    <div class="skills-category-card glass-card reveal-item" data-tilt>
+                        <div class="category-header">
+                            <div class="cat-icon cyan"><i class="fa-solid fa-code"></i></div>
+                            <h3>Languages</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><span class="skill-name">C#</span><span class="skill-level">Advanced</span></li>
+                            <li><span class="skill-name">Java</span><span class="skill-level">Intermediate</span></li>
+                            <li><span class="skill-name">Python</span><span class="skill-level">Intermediate</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Web Technologies -->
+                    <div class="skills-category-card glass-card reveal-item" data-tilt>
+                        <div class="category-header">
+                            <div class="cat-icon emerald"><i class="fa-solid fa-globe"></i></div>
+                            <h3>Web & App Tech</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><span class="skill-name">HTML5 / CSS3</span><span class="skill-level">Expert</span></li>
+                            <li><span class="skill-name">ASP.NET</span><span class="skill-level">Intermediate</span></li>
+                            <li><span class="skill-name">PHP</span><span class="skill-level">Intermediate</span></li>
+                            <li><span class="skill-name">Bootstrap</span><span class="skill-level">Advanced</span></li>
+                            <li><span class="skill-name">JavaScript (ES6+)</span><span class="skill-level">Intermediate</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Database & Tools -->
+                    <div class="skills-category-card glass-card reveal-item" data-tilt>
+                        <div class="category-header">
+                            <div class="cat-icon purple"><i class="fa-solid fa-database"></i></div>
+                            <h3>Data & IDEs</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><span class="skill-name">MySQL</span><span class="skill-level">Advanced</span></li>
+                            <li><span class="skill-name">SQL Server</span><span class="skill-level">Intermediate</span></li>
+                            <li><span class="skill-name">VS & VS Code</span><span class="skill-level">Advanced</span></li>
+                            <li><span class="skill-name">Git & GitHub</span><span class="skill-level">Intermediate</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Hardware & IT Support -->
+                    <div class="skills-category-card glass-card reveal-item" data-tilt>
+                        <div class="category-header">
+                            <div class="cat-icon blue"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                            <h3>Hardware & IT Support</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><span class="skill-name">Computer Assembly</span><span class="skill-level">Expert</span></li>
+                            <li><span class="skill-name">Hardware Troubleshooting</span><span class="skill-level">Expert</span></li>
+                            <li><span class="skill-name">Software Installation</span><span class="skill-level">Expert</span></li>
+                            <li><span class="skill-name">Desktop Support</span><span class="skill-level">Advanced</span></li>
+                            <li><span class="skill-name">System Configuration</span><span class="skill-level">Advanced</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Core & Productivity -->
+                    <div class="skills-category-card glass-card reveal-item" data-tilt>
+                        <div class="category-header">
+                            <div class="cat-icon orange"><i class="fa-solid fa-users-gear"></i></div>
+                            <h3>Productivity & Core</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><span class="skill-name">MS Office Suite</span><span class="skill-level">Advanced</span></li>
+                            <li><span class="skill-name">Troubleshooting</span><span class="skill-level">Expert</span></li>
+                            <li><span class="skill-name">User Support</span><span class="skill-level">Advanced</span></li>
+                            <li><span class="skill-name">Problem Solving</span><span class="skill-level">Expert</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Languages Spoken -->
+                    <div class="skills-category-card glass-card reveal-item" data-tilt>
+                        <div class="category-header">
+                            <div class="cat-icon gold"><i class="fa-solid fa-language"></i></div>
+                            <h3>Languages Spoken</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><span class="skill-name">English</span><span class="skill-level">Speak, Write</span></li>
+                            <li><span class="skill-name">Tamil</span><span class="skill-level">Speak, Write</span></li>
+                            <li><span class="skill-name">Malayalam</span><span class="skill-level">Speak</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 5. PROJECTS -->
+        <section id="projects" class="projects-section">
+            <div class="section-container">
+                <div class="section-header align-center">
+                    <span class="section-subtitle">Works</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <!-- Featured Project (Main) -->
+                <div class="featured-project-container glass-card reveal-item">
+                    <div class="card-inner-glow"></div>
+                    <div class="featured-project-grid">
+                        <div class="featured-project-media">
+                            <div class="abstract-project-art main-art-bg">
+                                <img src="assets/images/green-cloud.png" alt="GreenCloud Carbon-Aware Workload Management" class="project-img-display">
+                                <div class="floating-orb-mini center-orb"></div>
+                                <div class="grid-mesh-mini"></div>
+                                <div class="project-tags-overlay">
+                                    <span class="tech-tag">Python (Flask)</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">Glassmorphism UI</span>
+                                </div>
+                                <span class="art-caption">Carbon-Aware Engine Dashboard</span>
+                            </div>
+                        </div>
+
+                        <div class="featured-project-details">
+                            <div class="featured-tag">Featured Project</div>
+                            <h3>GreenCloud: Carbon-Aware Cloud Workload Management</h3>
+                            <p class="project-summary">
+                                A premium full-stack cloud management platform implementing green computing algorithms to schedule and scale VM server instances based on real-time energy analytics.
+                            </p>
+                            
+                            <h4 class="features-header">Key Core Features:</h4>
+                            <ul class="project-features-list">
+                                <li><i class="fa-regular fa-square-check text-cyan"></i> Role-based authentication (Admin, Owner, Sub User) with access control.</li>
+                                <li><i class="fa-regular fa-square-check text-cyan"></i> Secure Email OTP verification & automated password reset workflows.</li>
+                                <li><i class="fa-regular fa-square-check text-cyan"></i> Real-time cloud resource monitoring and dynamic workload scheduling.</li>
+                                <li><i class="fa-regular fa-square-check text-cyan"></i> Energy analytics dashboard visualized with interactive Chart.js widgets.</li>
+                            </ul>
+
+                            <div class="project-tech-stack">
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Bootstrap</span>
+                                <span>MySQL</span>
+                                <span>Chart.js</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://github.com/vinayvm094-cyber/Green-Cloud" target="_blank" class="btn btn-primary btn-magnetic">
+                                    <i class="fa-brands fa-github"></i> <span>View Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary Projects Grid -->
+                <div class="projects-grid">
+                    
+                    <!-- Namma Veedu RGCET – Food Ordering & Restaurant Management System -->
+                    <div class="project-card glass-card reveal-item" data-tilt>
+                        <div class="card-inner-glow"></div>
+                        <div class="project-card-media">
+                            <div class="abstract-project-art food-art-bg">
+                                <img src="assets/images/namma-veedu.jpg" alt="Namma Veedu RGCET Food Ordering & Restaurant Management System" class="project-img-display">
+                                <i class="fa-solid fa-utensils art-icon"></i>
+                                <div class="grid-mesh-mini"></div>
+                            </div>
+                        </div>
+                        <div class="project-card-info">
+                            <h3>Namma Veedu RGCET – Food Ordering & Restaurant Management System</h3>
+                            <p>
+                                A responsive restaurant management and food ordering platform with custom dashboards, online ordering, wallet system, and a comprehensive admin management portal.
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Developed a responsive restaurant management and food ordering platform using ASP.NET MVC and SQL Server.</li>
+                                <li>Implemented secure authentication and authorization with separate Admin and Customer dashboards.</li>
+                                <li>Built menu browsing, cart management, online ordering, wallet system, coupons, wishlist, live order tracking, and customer reviews.</li>
+                                <li>Designed an admin portal for managing food items, categories, inventory, orders, delivery personnel, sales reports, and promotional offers.</li>
+                                <li>Applied Entity Framework with Repository/Service architecture, Bootstrap UI, and server-side validation for a scalable, maintainable application.</li>
+                            </ul>
+                            <div class="project-tech-stack">
+                                <span>ASP.NET MVC</span>
+                                <span>C#</span>
+                                <span>Entity Framework</span>
+                                <span>SQL Server</span>
+                                <span>Bootstrap</span>
+                                <span>HTML & CSS</span>
+                            </div>
+                            <div class="project-card-links">
+                                <a href="https://github.com/vinayvm094-cyber/Namma_veedu" target="_blank" class="btn btn-primary btn-magnetic">
+                                    <i class="fa-brands fa-github"></i> <span>View Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 6. EXPERIENCE -->
+        <section id="experience" class="experience-section">
+            <div class="section-container">
+                <div class="section-header align-center">
+                    <span class="section-subtitle">Timeline</span>
+                    <h2 class="section-title">Work Experience</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="experience-timeline">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Lenovo In-Plant Trainee -->
+                    <div class="timeline-card-wrapper left reveal-item">
+                        <div class="timeline-dot-glow"></div>
+                        <div class="timeline-glass-card glass-card">
+                            <div class="card-inner-glow"></div>
+                            <div class="experience-header">
+                                <div class="comp-details">
+                                    <h3>In-Plant Trainee – Manufacturing</h3>
+                                    <h4 class="company-name">Lenovo (India) Pvt. Ltd.</h4>
+                                </div>
+                                <span class="experience-date"><i class="fa-regular fa-calendar-days"></i> March 2023</span>
+                            </div>
+                            <p class="experience-desc">
+                                Completed an intensive 22-day in-plant training in Lenovo's Manufacturing division, acquiring exposure to industrial operations, production schedules, assembly pipelines, and strict quality control processes.
+                            </p>
+                            <div class="experience-skills-used">
+                                <span class="skill-tag">Manufacturing Workflows</span>
+                                <span class="skill-tag">Hardware Systems</span>
+                                <span class="skill-tag">Diagnostics</span>
+                                <span class="skill-tag">Quality Assurance</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 7. EDUCATION -->
+        <section id="education" class="education-section">
+            <div class="section-container">
+                <div class="section-header align-center">
+                    <span class="section-subtitle">Academic Journey</span>
+                    <h2 class="section-title">Education</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="education-timeline-vertical">
+                    <div class="edu-line"></div>
+
+                    <!-- MCA -->
+                    <div class="edu-node reveal-item">
+                        <div class="edu-marker"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="edu-content-card glass-card">
+                            <div class="card-inner-glow"></div>
+                            <span class="edu-year">2026 (Pursuing)</span>
+                            <h3>Master of Computer Applications (MCA)</h3>
+                            <h4 class="edu-school">Rajiv Gandhi College of Engineering and Technology, Puducherry</h4>
+                            <p>Engaging in advanced computer application theory, database systems, software engineering practices, networking, and security.</p>
+                        </div>
+                    </div>
+
+                    <!-- B.Voc -->
+                    <div class="edu-node reveal-item">
+                        <div class="edu-marker"><i class="fa-solid fa-code"></i></div>
+                        <div class="edu-content-card glass-card">
+                            <div class="card-inner-glow"></div>
+                            <span class="edu-year">2024</span>
+                            <h3>B.Voc. Software Development</h3>
+                            <h4 class="edu-school">Pondicherry University Community College, Puducherry</h4>
+                            <div class="grade-pill">7.5 CGPA</div>
+                            <p>Focused on hands-on software development principles, system analysis, object-oriented programming (C#, Java), and modern web framework applications.</p>
+                        </div>
+                    </div>
+
+                    <!-- Airline Tourism -->
+                    <div class="edu-node reveal-item">
+                        <div class="edu-marker"><i class="fa-solid fa-plane-departure"></i></div>
+                        <div class="edu-content-card glass-card">
+                            <div class="card-inner-glow"></div>
+                            <span class="edu-year">2021</span>
+                            <h3>Diploma in Airline Tourism and Hospitality Management</h3>
+                            <h4 class="edu-school">Heart School of Aviation, Puducherry</h4>
+                            <div class="grade-pill">A Grade</div>
+                            <p>Learned communication, client relations, administrative support, user-facing coordination, and organization logistics.</p>
+                        </div>
+                    </div>
+
+                    <!-- HSC -->
+                    <div class="edu-node reveal-item">
+                        <div class="edu-marker"><i class="fa-solid fa-school"></i></div>
+                        <div class="edu-content-card glass-card">
+                            <div class="card-inner-glow"></div>
+                            <span class="edu-year">2021</span>
+                            <h3>Higher Secondary Certificate (HSC)</h3>
+                            <h4 class="edu-school">Wiseman Higher Secondary School, Puducherry</h4>
+                        </div>
+                    </div>
+
+                    <!-- SSLC -->
+                    <div class="edu-node reveal-item">
+                        <div class="edu-marker"><i class="fa-solid fa-book"></i></div>
+                        <div class="edu-content-card glass-card">
+                            <div class="card-inner-glow"></div>
+                            <span class="edu-year">2018</span>
+                            <h3>Secondary School Leaving Certificate (SSLC)</h3>
+                            <h4 class="edu-school">Ashram Matriculation Higher Secondary School, Puducherry</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 8. CERTIFICATIONS & WORKSHOPS -->
+        <section id="certifications" class="certifications-section">
+            <div class="section-container">
+                <div class="section-header align-center">
+                    <span class="section-subtitle">Credentials</span>
+                    <h2 class="section-title">Certifications & Workshops</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="certifications-grid">
+                    
+                    <!-- Cert 1 -->
+                    <div class="cert-card glass-card reveal-item">
+                        <div class="card-inner-glow"></div>
+                        <div class="cert-badge-icon"><i class="fa-solid fa-medal"></i></div>
+                        <h3>Foundation of Full Stack Web Development</h3>
+                        <p class="cert-issuer">MSME Technology Centre, Puducherry</p>
+                        <p class="cert-duration">Aug–Oct 2025</p>
+                        <span class="cert-program">Entrepreneurship-cum-Skill Development Programme (E-SDP)</span>
+                    </div>
+
+                    <!-- Cert 2 -->
+                    <div class="cert-card glass-card reveal-item">
+                        <div class="card-inner-glow"></div>
+                        <div class="cert-badge-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h3>The Joy of Computing using Python</h3>
+                        <p class="cert-issuer">NPTEL / IIT Madras</p>
+                        <p class="cert-duration">Oct 2025</p>
+                        <span class="cert-badge-level">Elite Status</span>
+                    </div>
+
+                    <!-- Cert 3 -->
+                    <div class="cert-card glass-card reveal-item">
+                        <div class="card-inner-glow"></div>
+                        <div class="cert-badge-icon"><i class="fa-solid fa-tower-broadcast"></i></div>
+                        <h3>Internet of Things (IoT) Training</h3>
+                        <p class="cert-issuer">MSME Technology Centre, Puducherry</p>
+                        <p class="cert-duration">Aug 2025</p>
+                    </div>
+
+                    <!-- Cert 4 -->
+                    <div class="cert-card glass-card reveal-item">
+                        <div class="card-inner-glow"></div>
+                        <div class="cert-badge-icon"><i class="fa-solid fa-code-compare"></i></div>
+                        <h3>PHP and MySQL Training</h3>
+                        <p class="cert-issuer">Spoken Tutorial Project, IIT Bombay</p>
+                        <p class="cert-duration">Apr 2025</p>
+                    </div>
+
+                    <!-- Cert 5 -->
+                    <div class="cert-card glass-card reveal-item">
+                        <div class="card-inner-glow"></div>
+                        <div class="cert-badge-icon"><i class="fa-solid fa-terminal"></i></div>
+                        <h3>C Programming Training</h3>
+                        <p class="cert-issuer">Spoken Tutorial Project, IIT Bombay</p>
+                        <p class="cert-duration">Jan 2025</p>
+                    </div>
+
+                    <!-- Cert 6 -->
+                    <div class="cert-card glass-card reveal-item">
+                        <div class="card-inner-glow"></div>
+                        <div class="cert-badge-icon"><i class="fa-solid fa-brain"></i></div>
+                        <h3>AI in Detection of Non-Communicable Diseases</h3>
+                        <p class="cert-issuer">National Workshop</p>
+                        <p class="cert-desc">Explored neural integrations & ML models for health analysis.</p>
+                    </div>
+
+                    <!-- Cert 7 -->
+                    <div class="cert-card glass-card reveal-item">
+                        <div class="card-inner-glow"></div>
+                        <div class="cert-badge-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                        <h3>Medical Coding Workshop</h3>
+                        <p class="cert-issuer">ThoughtFlows (AAPC Provider, AHIMA Recognized)</p>
+                        <p class="cert-duration">Jul 2025</p>
+                    </div>
+
+                    <!-- Cert 8 -->
+                    <div class="cert-card glass-card reveal-item">
+                        <div class="card-inner-glow"></div>
+                        <div class="cert-badge-icon"><i class="fa-solid fa-trophy"></i></div>
+                        <h3>National Level Inter-College Tech Symposium</h3>
+                        <p class="cert-issuer">Participant</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 9. RESUME SECTION -->
+        <section id="resume" class="resume-section">
+            <div class="section-container">
+                <div class="section-header align-center">
+                    <span class="section-subtitle">Recruitment</span>
+                    <h2 class="section-title">Resume & CV</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="resume-wrapper glass-card reveal-item">
+                    <div class="card-inner-glow"></div>
+                    <div class="resume-layout-grid">
+                        <div class="resume-info-block">
+                            <h3>Recruiter-Friendly ATS Documentation</h3>
+                            <p>
+                                Are you hiring for software engineering, IT support, hardware diagnostics, or desktop troubleshooting roles? Download the structured, single-page PDF formatted to easily parse through applicant tracking systems.
+                            </p>
+                            <ul class="resume-benefits">
+                                <li><i class="fa-solid fa-circle-check text-cyan"></i> Clear semantic hierarchies.</li>
+                                <li><i class="fa-solid fa-circle-check text-cyan"></i> Fully keyword optimized (C#, Flask, ITIL, Desktop Support).</li>
+                                <li><i class="fa-solid fa-circle-check text-cyan"></i> Clean fonts and tables structure for instant OCR parsing.</li>
+                            </ul>
+                            <div class="resume-action-buttons">
+                                <a href="assets/Vinay_VM_Resume.pdf" class="btn btn-primary btn-magnetic" download="Vinay_VM_Resume.pdf">
+                                    <i class="fa-solid fa-file-arrow-down"></i> <span>Download ATS PDF</span>
+                                </a>
+                                <a href="assets/Vinay_VM_Resume.html" target="_blank" class="btn btn-secondary btn-magnetic">
+                                    <i class="fa-solid fa-eye"></i> <span>Preview Resume</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="resume-preview-block">
+                            <div class="resume-visual-mockup">
+                                <div class="mockup-header">
+                                    <span class="dot-red"></span>
+                                    <span class="dot-yellow"></span>
+                                    <span class="dot-green"></span>
+                                    <span class="mockup-tab">Vinay_VM_Resume.pdf</span>
+                                </div>
+                                <div class="mockup-body">
+                                    <div class="mockup-name">VINAY V.M</div>
+                                    <div class="mockup-contact">Puducherry, India | vinayvm094@gmail.com | 94881 07046</div>
+                                    <div class="mockup-divider"></div>
+                                    <div class="mockup-section-title">OBJECTIVE</div>
+                                    <div class="mockup-text-block">Master of Computer Applications (MCA) postgraduate seeking entry-level IT roles...</div>
+                                    <div class="mockup-section-title">EDUCATION</div>
+                                    <div class="mockup-text-block"><strong>MCA (2026 Pursuing)</strong> - Rajiv Gandhi College of Eng.</div>
+                                    <div class="mockup-text-block"><strong>B.Voc Software Dev (2024)</strong> - Pondicherry University</div>
+                                    <div class="mockup-section-title">PROJECTS</div>
+                                    <div class="mockup-text-block"><strong>GreenCloud Management System</strong> (Flask, MySQL, JS)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 10. CONTACT -->
+        <section id="contact" class="contact-section">
+            <div class="section-container">
+                <div class="section-header align-center">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Contact Hub</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="contact-grid">
+                    
+                    <!-- Contact Cards / Info -->
+                    <div class="contact-info-column reveal-item">
+                        
+                        <!-- Contact Card 1 -->
+                        <div class="contact-info-card glass-card" data-tilt>
+                            <div class="card-inner-glow"></div>
+                            <div class="contact-icon email-theme"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="contact-details-text">
+                                <span>Email Me</span>
+                                <a href="mailto:vinayvm094@gmail.com" class="contact-link">vinayvm094@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <!-- Contact Card 2 -->
+                        <div class="contact-info-card glass-card" data-tilt>
+                            <div class="card-inner-glow"></div>
+                            <div class="contact-icon phone-theme"><i class="fa-solid fa-phone"></i></div>
+                            <div class="contact-details-text">
+                                <span>Call Me</span>
+                                <a href="tel:+919488107046" class="contact-link">+91 94881 07046</a>
+                            </div>
+                        </div>
+
+                        <!-- Contact Card 3 -->
+                        <div class="contact-info-card glass-card" data-tilt>
+                            <div class="card-inner-glow"></div>
+                            <div class="contact-icon location-theme"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="contact-details-text">
+                                <span>Location</span>
+                                <span class="contact-plain-text">Puducherry, India</span>
+                            </div>
+                        </div>
+
+                        <!-- Contact Card 4 - Social Grid -->
+                        <div class="contact-info-card social-grid-card glass-card">
+                            <div class="card-inner-glow"></div>
+                            <h3>Network Connections</h3>
+                            <div class="social-links-grid">
+                                <a href="https://linkedin.com/in/vinay-v-m" target="_blank" class="social-network-btn linkedin btn-magnetic" aria-label="LinkedIn Profile">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://github.com/Lonelyboyvinay" target="_blank" class="social-network-btn github btn-magnetic" aria-label="GitHub Profile">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-column glass-card reveal-item">
+                        <div class="card-inner-glow"></div>
+                        <h3>Send a Direct Message</h3>
+                        
+                        <form id="portfolio-contact-form" class="glowing-form">
+                            <div class="form-row-double">
+                                <div class="input-wrapper">
+                                    <input type="text" id="form-name" required placeholder=" " class="form-input">
+                                    <label for="form-name" class="form-label">Full Name</label>
+                                    <span class="input-glow-line"></span>
+                                </div>
+                                <div class="input-wrapper">
+                                    <input type="email" id="form-email" required placeholder=" " class="form-input">
+                                    <label for="form-email" class="form-label">Email Address</label>
+                                    <span class="input-glow-line"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="input-wrapper">
+                                <input type="text" id="form-subject" required placeholder=" " class="form-input">
+                                <label for="form-subject" class="form-label">Subject</label>
+                                <span class="input-glow-line"></span>
+                            </div>
+
+                            <div class="input-wrapper text-area-wrapper">
+                                <textarea id="form-message" required placeholder=" " class="form-input form-textarea"></textarea>
+                                <label for="form-message" class="form-label">Your Message</label>
+                                <span class="input-glow-line"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-magnetic btn-submit-form" id="submit-btn">
+                                <span>Send Message</span> <i class="fa-regular fa-paper-plane"></i>
+                            </button>
+                            <div id="form-feedback" class="feedback-msg"></div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 11. FOOTER -->
+    <footer class="glass-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <span class="logo-accent">V</span>INAY<span class="logo-dot">.</span>
+                </div>
+                <div class="footer-tagline">
+                    Crafting premium digital interfaces & systems.
+                </div>
+            </div>
+            
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p class="copyright-text">
+                    &copy; 2026 Vinay V.M. All rights reserved. Designed with premium Glassmorphism.
+                </p>
+                <div class="footer-utility-links">
+                    <a href="#home">Back to Top</a>
+                    <a href="https://github.com/Lonelyboyvinay" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/vinay-v-m" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Demo Modal Backdrop -->
+    <div class="modal-backdrop" id="demo-modal">
+        <div class="modal-card glass-card">
+            <div class="card-inner-glow"></div>
+            <button class="modal-close-btn" id="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body-content">
+                <i class="fa-solid fa-circle-info modal-info-icon"></i>
+                <h3>Interactive Demo Note</h3>
+                <p>This demo trigger represents a live staging deployment link for Vinay V.M's development applications.</p>
+                <p>As this is a statically generated workspace demonstration, the linked live application databases and live server environments are simulated. In production, this link connects directly to active host systems (e.g. Vercel / Render / AWS).</p>
+                <button class="btn btn-primary btn-magnetic" id="modal-ok">OK, Got It</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Core Javascript Code -->
+    <script src="script.js"></script>
+</body>
+</html>
