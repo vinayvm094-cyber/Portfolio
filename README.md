@@ -41,7 +41,7 @@ A state-of-the-art, fully responsive personal portfolio website customized for *
 ---
 
 ## 💡 Technologies Used
-* **Markup**: HTML5 (Semantic, SEO, JSON-LD Schema)
+* **Markup**: HTML (Semantic, SEO, JSON-LD Schema)
 * **Design**: Custom Vanilla CSS (Tailored Glassmorphism, CSS Custom Variables, Keyframe Animations)
 * **Interactivity**: Vanilla JavaScript (Canvas API, IntersectionObserver, requestAnimationFrame, Cursor Tracking)
 * **Icons**: FontAwesome Web Fonts (v6.4.0)
